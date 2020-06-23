@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+}
+
+@media screen and (max-width: 300px) {
+    body {
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+    }
+    #small{
+      visibility: visible;
+    }
+    #small p{
+      font-size: 18pt;
+    }
+    #medium{
+      visibility: hidden;
+    }
+    #large{
+      visibility: hidden;
+    }
+
+  }
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    body {
+      background-color: green;
+    }
+    #small{
+      visibility: visible;
+      width: 66%;
+    }
+    #medium{
+      visibility: visible;
+      width: 33%;
+    }
+    #medium p{
+      font-size: 16pt;
+    }
+    #large{
+      visibility: visible;
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: blue;
+      display: flex;
+    }
+    #small{
+      visibility: visible;
+    }
+    #medium{
+      visibility: visible;
+
+    }
+    #large{
+      visibility: visible;
+
+    }
+    #large p{
+      font-size: 13pt;
+    }
+  }
